@@ -1,1 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 @import "tailwindcss";
+
+html,
+body {
+    width: 100dvw;
+    overflow-x: hidden;
+    background-color: hsl(212, 45%, 89%);
+    color: white;
+    scroll-behavior: smooth;
+    font-family: "Outfit", sans-serif;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-col-center {
+        @apply flex flex-col justify-center items-center;
+    }
+}
